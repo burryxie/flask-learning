@@ -1,335 +1,965 @@
-<!doctype html>
-<html lang="en" data-bs-theme="auto">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.118.2">
-    <title>深圳龙泽宏天会计师事务所(普通合伙)</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
-    <script src="../static/js/color-modes.js"></script>
-    <script src="../static/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
-    <script src="../static/js/checkout.js"></script>
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+<!DOCTYPE html>
+<html lang="en">
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>龙泽宏天 | 企业财税审计管理咨询一条龙服务</title>
 
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
+  <meta name="description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://uideck.com/play/">
+  <meta property="og:title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
+  <meta property="og:description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
+  <meta property="og:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://uideck.com/play/">
+  <meta property="twitter:title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
+  <meta property="twitter:description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
+  <meta property="twitter:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+<svg fill="none" height="55" viewBox="0 0 157 55" width="157" xmlns="http://www.w3.org/2000/svg"><path d="m60.7035 14.4004c2.3053 0 4.3067.38 6.004 1.14 1.7227.76 3.04 1.8493 3.952 3.268s1.368 3.1033 1.368 5.054c0 1.9253-.456 3.61-1.368 5.054-.912 1.4187-2.2293 2.508-3.952 3.268-1.6973.76-3.6987 1.14-6.004 1.14h-6.004v7.676h-4.94v-26.6zm-.228 14.744c2.1533 0 3.7873-.456 4.902-1.368s1.672-2.2167 1.672-3.914-.5573-3.002-1.672-3.914-2.7487-1.368-4.902-1.368h-5.776v10.564zm18.9852-14.744h4.94v22.42h13.908v4.18h-18.848zm42.6853 20.444h-13.3l-2.622 6.156h-5.092l11.97-26.6h4.864l12.008 26.6h-5.168zm-1.634-3.876-5.016-11.628-4.978 11.628zm25.225.646v9.386h-4.94v-9.31l-10.45-17.29h5.282l7.79 12.958 7.866-12.958h4.864z" fill="#fff"/><path d="m20 47c11.0457 0 20-8.9543 20-20s-8.9543-20-20-20-20 8.9543-20 20 8.9543 20 20 20z" fill="#fff"/><path clip-rule="evenodd" d="m11.2311 15c-1.71175 0-2.97838 1.4983-2.92168 3.1231.05445 1.5609-.01629 3.5827-.52522 5.2314-.51076 1.6533-1.37397 2.701-2.7842 2.8355v1.5183c1.41023.1348 2.27344 1.1819 2.78414 2.8355.50899 1.6487.57967 3.6704.52522 5.2314-.0567 1.6246 1.20993 3.1231 2.92194 3.1231h17.5399c1.7118 0 2.9782-1.4983 2.9214-3.1231-.0544-1.561.0163-3.5827.5253-5.2314.5107-1.6536 1.3718-2.7012 2.7821-2.8355v-1.5183c-1.4102-.1348-2.2713-1.1819-2.7821-2.8355-.5091-1.6485-.5797-3.6705-.5253-5.2314.0568-1.6246-1.2096-3.1231-2.9214-3.1231zm14.1079 14.7109c0 2.2374-1.6688 3.5942-4.4382 3.5942h-4.7144c-.1348 0-.2641-.0536-.3595-.1489-.0954-.0954-.1489-.2247-.1489-.3596v-11.6949c0-.1348.0535-.2642.1489-.3595.0954-.0954.2247-.1489.3595-.1489h4.6875c2.3093 0 3.8248 1.2508 3.8248 3.1713 0 1.3479-1.0195 2.5547-2.3184 2.7661v.0703c1.7681.1939 2.9587 1.4185 2.9587 3.1099zm-4.9523-7.5058h-2.688v3.7969h2.264c1.7502 0 2.7152-.7048 2.7152-1.9645-.0002-1.1805-.8298-1.8324-2.2912-1.8324zm-2.688 5.3034v4.1842h2.7869c1.8223 0 2.7875-.7312 2.7875-2.1053s-.9923-2.0791-2.9047-2.0791z" fill="#3056d3" fill-rule="evenodd"/></svg>
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="../static/images/favicon.svg" type="image/svg" />
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
+  <!-- ===== All CSS files ===== -->
+  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../static/css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="../static/css/lineicons.css" />
+  <link rel="stylesheet" type="text/css" href="../static/css/ud-styles.css" />
+</head>
 
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+<body>
+  <!-- ====== Header Start ====== -->
+  <header class="ud-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <img src="../static/images/logo/logo.svg" alt="Logo" />
+            </a>
+            <button class="navbar-toggler">
+              <span class="toggler-icon"> </span>
+              <span class="toggler-icon"> </span>
+              <span class="toggler-icon"> </span>
+            </button>
 
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
+            <div class="navbar-collapse">
+              <ul id="nav" class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="#home">首页</a>
+                </li>
 
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="#buz_intro">业务介绍</a>
+                </li>
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="#news">新闻资讯</a>
+                </li>
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="#about">关于我们</a>
+                </li>
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="#talent">人才招聘</a>
+                </li>
+                <li class="nav-item">
+                  <a class="ud-menu-scroll" href="#contact">联系我们</a>
+                </li>
+              </ul>
+            </div>
 
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="../static/css/carousel.css" rel="stylesheet">
-  </head>
-  <body>
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
-
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
+            <div class="navbar-btn d-none d-sm-inline-block">
+              <a href="login.html" class="ud-main-btn ud-login-btn">
+                登陆
+              </a>
+              <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
+                注册
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
     </div>
+  </header>
+  <!-- ====== Header End ====== -->
 
-    <!-- 
-    <div class="container fixed-top">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> 
-          <img src="../static/img/logo.jpg" class="bi me-2" width="40" height="32">
-          <span class="fs-4">龙泽宏天</span>
-        </a>
-  
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        </ul>
-      </header>
+  <!-- ====== Hero Start ====== -->
+  <section class="ud-hero" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
+            <h1 class="ud-hero-title">
+              扎根深圳，放眼华南<br>专业财税审计咨询服务
+            </h1>
+            <p class="ud-hero-desc">
+              "靠服务立足，以质量取胜"，财务会计、审计、税务、公司治理和战略管理咨询、内部控制、风险管理、全面预算管理、企业并购重组
+            </p>
+            <!-- <ul class="ud-hero-buttons">
+              <li>
+                <a href="https://links.uideck.com/play-bootstrap-download" rel="nofollow noopener" target="_blank"
+                  class="ud-main-btn ud-white-btn">
+                  Download Now
+                </a>
+              </li>
+              <li>
+                <a href="./about" rel="nofollow noopener" target="_blank"
+                  class="ud-main-btn ud-link-btn">
+                  Learn More <i class="lni lni-arrow-right"></i>
+                </a>
+              </li>
+            </ul> -->
+          </div>
+          <!-- <div class="ud-hero-brands-wrapper wow fadeInUp" data-wow-delay=".3s"> -->
+          <!-- <img src="assets/images/hero/brand.svg" alt="brand" /> -->
+          <!-- </div> -->
+          <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s">
+            <img src="../static/images/hero/hero-image.svg" height="20%" alt="hero-image" />
+            <img src="../static/images/hero/dotted-shape.svg" alt="shape" class="shape shape-1" />
+            <img src="../static/images/hero/dotted-shape.svg" alt="shape" class="shape shape-2" />
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="b-example-divider"></div> -->
-    <header data-bs-theme="dark">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">深圳龙泽宏天会计师事务所(普通合伙)</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">首页</a>
+  </section>
+  <!-- ====== Hero End ====== -->
+
+  <!-- ====== Bussiness Intro Start ====== -->
+  <section id="buz_intro" class="ud-features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ud-section-title">
+            <!-- <span>Features</span> -->
+            <h2>业务介绍</h2>
+            <p>
+              待补充：业务介绍描述，业务介绍描述，业务介绍描述，业务介绍描述
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-sm-6">
+          <div class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
+            <div class="ud-feature-icon">
+              <i class="lni lni-gift"></i>
+            </div>
+            <div class="ud-feature-content">
+              <h3 class="ud-feature-title">业务1</h3>
+              <p class="ud-feature-desc">
+                业务1描述
+              </p>
+              <a href="javascript:void(0)" class="ud-feature-link">
+                了解更多
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-sm-6">
+          <div class="ud-single-feature wow fadeInUp" data-wow-delay=".15s">
+            <div class="ud-feature-icon">
+              <i class="lni lni-move"></i>
+            </div>
+            <div class="ud-feature-content">
+              <h3 class="ud-feature-title">业务2</h3>
+              <p class="ud-feature-desc">
+                业务2描述
+              </p>
+              <a href="javascript:void(0)" class="ud-feature-link">
+                了解更多
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-sm-6">
+          <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
+            <div class="ud-feature-icon">
+              <i class="lni lni-layout"></i>
+            </div>
+            <div class="ud-feature-content">
+              <h3 class="ud-feature-title">业务3</h3>
+              <p class="ud-feature-desc">
+                业务3描述.
+              </p>
+              <a href="javascript:void(0)" class="ud-feature-link">
+                了解更多
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-sm-6">
+          <div class="ud-single-feature wow fadeInUp" data-wow-delay=".25s">
+            <div class="ud-feature-icon">
+              <i class="lni lni-layers"></i>
+            </div>
+            <div class="ud-feature-content">
+              <h3 class="ud-feature-title">业务4</h3>
+              <p class="ud-feature-desc">
+                业务4描述
+              </p>
+              <a href="javascript:void(0)" class="ud-feature-link">
+                了解更多
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Bussiness Intro End ====== -->
+
+  <!-- ====== News Start ====== -->
+  <section id="news" class="ud-about">
+    <div class="container">
+      <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+        <div class="ud-about-content-wrapper">
+          <div class="ud-about-content">
+            <span class="tag">最新资讯</span>
+            <h2>何萍老师好啊好啊好啊</h2>
+            <p>
+              何萍老师好啊好啊好啊何萍老师好啊好啊好啊何萍老师好啊好啊好啊.右边的图片待替换
+            </p>
+
+            <p>
+              何萍老师好啊好啊好啊何萍老师好啊好啊好啊何萍老师好啊好啊好啊何萍老师好啊好啊好啊何萍老师好啊好啊好啊.
+            </p>
+            <a href="/news_info" class="ud-main-btn">更多新闻</a>
+          </div>
+        </div>
+        <div class="ud-about-image">
+          <img src="../static/images/about/about-image.svg" alt="about-image" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== News End ====== -->
+
+  <!-- ====== Pricing Start ====== 
+  <section id="pricing" class="ud-pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ud-section-title mx-auto text-center">
+            <span>Pricing</span>
+            <h2>Our Pricing Plans</h2>
+            <p>
+              There are many variations of passages of Lorem Ipsum available
+              but the majority have suffered alteration in some form.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-0 align-items-center justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-10">
+          <div class="ud-single-pricing first-item wow fadeInUp" data-wow-delay=".15s">
+            <div class="ud-pricing-header">
+              <h3>STARTING FROM</h3>
+              <h4>$ 19.99/mo</h4>
+            </div>
+            <div class="ud-pricing-body">
+              <ul>
+                <li>5 User</li>
+                <li>All UI components</li>
+                <li>Lifetime access</li>
+                <li>Free updates</li>
+                <li>Use on 1 (one) project</li>
+                <li>4 Months support</li>
+              </ul>
+            </div>
+            <div class="ud-pricing-footer">
+              <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
+                Purchase Now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-10">
+          <div class="ud-single-pricing active wow fadeInUp" data-wow-delay=".1s">
+            <span class="ud-popular-tag">POPULAR</span>
+            <div class="ud-pricing-header">
+              <h3>STARTING FROM</h3>
+              <h4>$ 30.99/mo</h4>
+            </div>
+            <div class="ud-pricing-body">
+              <ul>
+                <li>5 User</li>
+                <li>All UI components</li>
+                <li>Lifetime access</li>
+                <li>Free updates</li>
+                <li>Use on 1 (one) project</li>
+                <li>4 Months support</li>
+              </ul>
+            </div>
+            <div class="ud-pricing-footer">
+              <a href="javascript:void(0)" class="ud-main-btn ud-white-btn">
+                Purchase Now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-10">
+          <div class="ud-single-pricing last-item wow fadeInUp" data-wow-delay=".15s">
+            <div class="ud-pricing-header">
+              <h3>STARTING FROM</h3>
+              <h4>$ 70.99/mo</h4>
+            </div>
+            <div class="ud-pricing-body">
+              <ul>
+                <li>5 User</li>
+                <li>All UI components</li>
+                <li>Lifetime access</li>
+                <li>Free updates</li>
+                <li>Use on 1 (one) project</li>
+                <li>4 Months support</li>
+              </ul>
+            </div>
+            <div class="ud-pricing-footer">
+              <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
+                Purchase Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  ====== Pricing End ====== -->
+
+  <!-- ====== About Start ====== -->
+  <section id="about" class="ud-faq">
+    <div class="shape">
+      <img src="../static/images/faq/shape.svg" alt="shape" />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ud-section-title text-center mx-auto">
+            <h2>关于我们</h2>
+            <h2>关于你想知道的一切</h2>
+            <p>
+              比如：何所到底是不是18岁？
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
+            <div class="accordion">
+              <button class="ud-faq-btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                <span class="icon flex-shrink-0">
+                  <i class="lni lni-chevron-down"></i>
+                </span>
+                <span>何所到底是不是18岁?</span>
+              </button>
+              <div id="collapseOne" class="accordion-collapse collapse">
+                <div class="ud-faq-body">
+                  好像是的
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
+            <div class="accordion">
+              <button class="ud-faq-btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                <span class="icon flex-shrink-0">
+                  <i class="lni lni-chevron-down"></i>
+                </span>
+                <span>何所到底是不是18岁?</span>
+              </button>
+              <div id="collapseTwo" class="accordion-collapse collapse">
+                <div class="ud-faq-body">
+                  Sure.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+            <div class="accordion">
+              <button class="ud-faq-btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                <span class="icon flex-shrink-0">
+                  <i class="lni lni-chevron-down"></i>
+                </span>
+                <span>何所到底是不是18岁?</span>
+              </button>
+              <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="ud-faq-body">
+                  Sure.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
+            <div class="accordion">
+              <button class="ud-faq-btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                <span class="icon flex-shrink-0">
+                  <i class="lni lni-chevron-down"></i>
+                </span>
+                <span>何所到底是不是18岁?</span>
+              </button>
+              <div id="collapseFour" class="accordion-collapse collapse">
+                <div class="ud-faq-body">
+                  Sure.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
+            <div class="accordion">
+              <button class="ud-faq-btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                <span class="icon flex-shrink-0">
+                  <i class="lni lni-chevron-down"></i>
+                </span>
+                <span>何所到底是不是18岁?</span>
+              </button>
+              <div id="collapseFive" class="accordion-collapse collapse">
+                <div class="ud-faq-body">
+                  Sure.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+            <div class="accordion">
+              <button class="ud-faq-btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                <span class="icon flex-shrink-0">
+                  <i class="lni lni-chevron-down"></i>
+                </span>
+                <span>何所到底是不是18岁?</span>
+              </button>
+              <div id="collapseSix" class="accordion-collapse collapse">
+                <div class="ud-faq-body">
+                  Sure.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== About End ====== -->
+
+
+
+
+  <!-- ====== Career Start ====== -->
+  <section id="talent" class="ud-pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ud-section-title mx-auto text-center">
+            <span class="tag">人才招聘</span>
+            <h2>21世纪什么最贵？</h2>
+            <p>
+              人才！只买贵的，不买好的.
+              <a href="javascript:void(0)" class="ud-feature-link">
+                查看更多岗位
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-0 align-items-center justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-10">
+          <div class="ud-single-pricing active wow fadeInUp" data-wow-delay=".15s">
+            <span class="ud-popular-tag">POPULAR</span>
+            <div class="ud-pricing-header">
+              <h3>职位名称</h3>
+              <h4>$ 19.99/mo</h4>
+            </div>
+            <div class="ud-pricing-body">
+              <ul>
+                <li>学历要求</li>
+                <li>经验要求</li>
+                <li>工作地点</li>
+              </ul>
+            </div>
+            <div class="ud-pricing-footer">
+              <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
+                查看详情
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-10">
+          <div class="ud-single-pricing active wow fadeInUp" data-wow-delay=".1s">
+            <span class="ud-popular-tag">POPULAR</span>
+            <div class="ud-pricing-header">
+              <h3>职位名称</h3>
+              <h4>$ 30.99/mo</h4>
+            </div>
+            <div class="ud-pricing-body">
+              <ul>
+                <li>学历要求</li>
+                <li>经验要求</li>
+                <li>工作地点</li>
+              </ul>
+            </div>
+            <div class="ud-pricing-footer">
+              <a href="javascript:void(0)" class="ud-main-btn ud-main-btn ud-border-btn">
+                查看详情
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-10">
+          <div class="ud-single-pricing active wow fadeInUp" data-wow-delay=".15s">
+            <span class="ud-popular-tag">POPULAR</span>
+            <div class="ud-pricing-header">
+              <h3>职位名称</h3>
+              <h4>$ 70.99/mo</h4>
+            </div>
+            <div class="ud-pricing-body">
+              <ul>
+                <li>学历要求</li>
+                <li>经验要求</li>
+                <li>工作地点</li>
+              </ul>
+            </div>
+            <div class="ud-pricing-footer">
+              <a href="javascript:void(0)" class="ud-main-btn ud-border-btn">
+                查看详情
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section id="talent" class="ud-testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ud-section-title mx-auto text-center">
+            <span class="tag">人才招聘</span>
+            <h2>21世纪什么最贵？</h2>
+            <p>
+              人才！只买贵的，不买好的.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="ud-single-testimonial wow fadeInUp" data-wow-delay=".1s">
+            <div class="ud-testimonial-ratings">
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+            </div>
+            <div class="ud-testimonial-content">
+              <p>
+                “Our members are so impressed. It's intuitive. It's clean.
+                It's distraction free. If you're building a community.
+              </p>
+            </div>
+            <div class="ud-testimonial-info">
+              <div class="ud-testimonial-image">
+                <img src="../static/images/testimonials/author-01.png" alt="author" />
+              </div>
+              <div class="ud-testimonial-meta">
+                <h4>Sabo Masties</h4>
+                <p>Founder @UIdeck</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="ud-single-testimonial wow fadeInUp" data-wow-delay=".15s">
+            <div class="ud-testimonial-ratings">
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+            </div>
+            <div class="ud-testimonial-content">
+              <p>
+                “Our members are so impressed. It's intuitive. It's clean.
+                It's distraction free. If you're building a community.
+              </p>
+            </div>
+            <div class="ud-testimonial-info">
+              <div class="ud-testimonial-image">
+                <img src="../static/images/testimonials/author-02.png" alt="author" />
+              </div>
+              <div class="ud-testimonial-meta">
+                <h4>Margin Gesmu</h4>
+                <p>Founder @Lineicons</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="ud-single-testimonial wow fadeInUp" data-wow-delay=".2s">
+            <div class="ud-testimonial-ratings">
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+              <i class="lni lni-star-filled"></i>
+            </div>
+            <div class="ud-testimonial-content">
+              <p>
+                “Our members are so impressed. It's intuitive. It's clean.
+                It's distraction free. If you're building a community.
+              </p>
+            </div>
+            <div class="ud-testimonial-info">
+              <div class="ud-testimonial-image">
+                <img src="../static/images/testimonials/author-03.png" alt="author" />
+              </div>
+              <div class="ud-testimonial-meta">
+                <h4>William Smith</h4>
+                <p>Founder @GrayGrids</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ud-brands wow fadeInUp" data-wow-delay=".2s">
+            <div class="ud-title">
+              <h6>Trusted and Used by</h6>
+            </div>
+            <div class="ud-brands-logo">
+              <div class="ud-single-logo">
+                <img src="../static/images/brands/ayroui.svg" alt="ayroui" />
+              </div>
+              <div class="ud-single-logo">
+                <img src="../static/images/brands/uideck.svg" alt="uideck" />
+              </div>
+              <div class="ud-single-logo">
+                <img src="../static/images/brands/graygrids.svg" alt="graygrids" />
+              </div>
+              <div class="ud-single-logo">
+                <img src="../static/images/brands/lineicons.svg" alt="lineicons" />
+              </div>
+              <div class="ud-single-logo">
+                <img src="../static/images/brands/ecommerce-html.svg" alt="ecommerce-html" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- ====== Career End ====== -->
+
+
+  <!-- ====== Contact Start ====== -->
+  <section id="contact" class="ud-contact">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-8 col-lg-7">
+          <div class="ud-contact-content-wrapper">
+            <div class="ud-contact-title">
+              <span>联系我们</span>
+              <h2>
+                愁啥愁！ <br />
+                瞅你咋地!
+              </h2>
+            </div>
+            <div class="ud-contact-info-wrapper">
+              <div class="ud-single-info">
+                <div class="ud-info-icon">
+                  <i class="lni lni-map-marker"></i>
+                </div>
+                <div class="ud-info-meta">
+                  <h5>我们的定位</h5>
+                  <p>深圳市福田区第壹世界广场A座9E</p>
+                </div>
+              </div>
+              <div class="ud-single-info">
+                <div class="ud-info-icon">
+                  <i class="lni lni-envelope"></i>
+                </div>
+                <div class="ud-info-meta">
+                  <h5>提前预约?</h5>
+                  <p>1025598017@qq.com</p>
+                  <p>kqx0731@163.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="ud-contact-form-wrapper wow fadeInUp" data-wow-delay=".2s">
+            <h3 class="ud-contact-form-title">给我们送个信</h3>
+            <form class="ud-contact-form needs-validation" action="/submit" method="post">
+              <div class="ud-form-group">
+                <label for="fullName">姓名*</label>
+                <input type="text" id="fullName" placeholder="张三" required/>
+              </div>
+              <div class="ud-form-group">
+                <label for="email">又想*</label>
+                <input type="email" id="email" placeholder="example@yourmail.com" required/>
+              </div>
+              <div class="ud-form-group">
+                <label for="phone">电话*</label>
+                <input type="text" id="phone" placeholder="188 5211 552" required/>
+              </div>
+              <div class="ud-form-group">
+                <label for="message">留个言*</label>
+                <textarea id="message" rows="1" placeholder="type your message here" required></textarea>
+              </div>
+              <div class="ud-form-group mb-0">
+                <button type="submit" class="ud-main-btn">
+                  发送
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Contact End ====== -->
+
+
+  <!-- ====== Footer Start ====== -->
+  <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
+    <div class="shape shape-1">
+      <img src="../static/images/footer/shape-1.svg" alt="shape" />
+    </div>
+    <div class="shape shape-2">
+      <img src="../static/images/footer/shape-2.svg" alt="shape" />
+    </div>
+    <div class="shape shape-3">
+      <img src="../static/images/footer/shape-3.svg" alt="shape" />
+    </div>
+    <div class="ud-footer-widgets">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="ud-widget">
+              <a href="index.html" class="ud-footer-logo">
+                <img src="../static/images/logo/logo.svg" alt="logo" />
+              </a>
+              <p class="ud-widget-desc">
+                我们用心为您服务.
+              </p>
+              <ul class="ud-widget-socials">
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-facebook-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-twitter-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-instagram-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/MusharofChy">
+                    <i class="lni lni-linkedin-original"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+            <div class="ud-widget">
+              <h5 class="ud-widget-title">业务介绍</h5>
+              <ul class="ud-widget-links">
+                <li>
+                  <a href="javascript:void(0)">财务审计</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">专项审计</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">财税规划</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">企业管理</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+            <div class="ud-widget">
+              <h5 class="ud-widget-title">新闻资讯</h5>
+              <ul class="ud-widget-links">
+                <li>
+                  <a href="javascript:void(0)">我司新闻</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">行业新闻</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">学习资料</a>
+                </li>
+                <!-- <li>
+                  <a href="javascript:void(0)">Refund policy</a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+            <div class="ud-widget">
+              <h5 class="ud-widget-title">关于我们</h5>
+              <ul class="ud-widget-links">
+                <li>
+                  <a href="https://lineicons.com/" rel="nofollow noopner" target="_blank">我们是谁
+                  </a>
+                </li>
+                <li>
+                  <a href="https://ecommercehtml.com/" rel="nofollow noopner" target="_blank">人才招聘</a>
+                </li>
+                <li>
+                  <a href="https://graygrids.com/" rel="nofollow noopner" target="_blank">联系我们</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="col-xl-3 col-lg-6 col-md-8 col-sm-10">
+            <div class="ud-widget">
+              <h5 class="ud-widget-title">Partners</h5>
+              <ul class="ud-widget-brands">
+                <li>
+                  <a href="https://ayroui.com/" rel="nofollow noopner" target="_blank">
+                    <img src="../static/images/footer/brands/ayroui.svg" alt="ayroui" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://ecommercehtml.com/" rel="nofollow noopner" target="_blank">
+                    <img src="../static/images/footer/brands/ecommerce-html.svg" alt="ecommerce-html" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://graygrids.com/" rel="nofollow noopner" target="_blank">
+                    <img src="../static/images/footer/brands/graygrids.svg" alt="graygrids" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://lineicons.com/" rel="nofollow noopner" target="_blank">
+                    <img src="../static/images/footer/brands/lineicons.svg" alt="lineicons" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://uideck.com/" rel="nofollow noopner" target="_blank">
+                    <img src="../static/images/footer/brands/uideck.svg" alt="uideck" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://tailwindtemplates.co/" rel="nofollow noopner" target="_blank">
+                    <img src="../static/images/footer/brands/tailwindtemplates.svg" alt="tailwindtemplates" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- <div class="ud-footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <ul class="ud-footer-bottom-left">
+              <li>
+                <a href="javascript:void(0)">Privacy policy</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/lz_news">新闻资讯</a>
+              <li>
+                <a href="javascript:void(0)">Support policy</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/buss_info">业务范围</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about_us">关于我们</a>
+              <li>
+                <a href="javascript:void(0)">Terms of service</a>
               </li>
             </ul>
-            <!-- <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="查找" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>  -->
+          </div>
+          <div class="col-md-4">
+            <p class="ud-footer-bottom-right">
+              Designed and Developed by
+              <a href="https://uideck.com" rel="nofollow">UIdeck</a>
+            </p>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2000">
-        <img src="../static/img/slide1.jpg" width="80%" height="100%" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-        <img src="../static/img/slide2.jpg" width="100%" height="100%"class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-        <img src="../static/img/slide3.jpg" width="100%" height="100%" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-        </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-        </button>
       </div>
-      
+    </div> -->
+  </footer>
+  <!-- ====== Footer End ====== -->
 
+  <!-- ====== Back To Top Start ====== -->
+  <a href="javascript:void(0)" class="back-to-top">
+    <i class="lni lni-chevron-up"> </i>
+  </a>
+  <!-- ====== Back To Top End ====== -->
 
-      <div class="container marketing">
-        <!-- START THE FEATURETTES -->
-        <!-- <hr class="featurette-divider"> -->
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">财务审计. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-            <p class="lead">全面检查和评估企业财务报表和财务信息，确保财务数据准确性、可靠性和合规性.</p>
-            <p><a class="btn btn-secondary" href="/buss_info/#financial_audit">了解更多 &raquo;</a></p>
-          </div>
-          <div class="col-md-5">
-            <img src="../static/img/financial_auditing.jpg" width="500" height="500" class="img-fluid" alt="...">
-            <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
-          </div>
-        </div>
-        <hr class="featurette-divider">
+  <!-- ====== All Javascript Files ====== -->
+  <script src="../static/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/js/wow.min.js"></script>
+  <script src="../static/js/main.js"></script>
+  <script>
+    // ==== for menu scroll
+    const pageLink = document.querySelectorAll(".ud-menu-scroll");
 
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1">专项审计 <span class="text-body-secondary">See for yourself.</span></h2>
-            <p class="lead">对特定项目、特定领域、特定问题进行深入调查和审核，以发现潜在问题、改进管理和提高效能</p>
-            <p><a class="btn btn-secondary" href="/buss_info/#special_audit">了解更多 &raquo;</a></p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img src="../static/img/special_auditing.jpg" width="500" height="600" class="img-fluid" alt="...">
-            <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
-          </div>
-        </div>
-        <hr class="featurette-divider">
+    pageLink.forEach((elem) => {
+      elem.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.querySelector(elem.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+          offsetTop: 1 - 60,
+        });
+      });
+    });
 
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">财务咨询 <span class="text-body-secondary">Checkmate.</span></h2>
-            <p class="lead">财务规划、税务筹划、财务报表分析等，助您实现财务目标和遵守税收法规</p>
-            <p><a class="btn btn-secondary" href="/buss_info/#financial_tax_onsulting">了解更多 &raquo;</a></p>
-          </div>
-          <div class="col-md-5">
-            <img src="../static/img/consulting.jpeg" width="500" height="500" class="img-fluid" alt="...">
-            <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
-          </div>
-        </div>
-        <hr class="featurette-divider">
-      </div>
+    // section menu active
+    function onScroll(event) {
+      const sections = document.querySelectorAll(".ud-menu-scroll");
+      const scrollPos =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
 
-      <div class="container marketing">
-        <form class="row g-3 needs-validation">
-          <div class="mx-auto" >
-            <h2 >联系我们</h2>
-          </div>
-          <div class="row">
-            <div class="mb-3 col-lg-3">
-              <label for="exampleFormControlInput0" class="form-label"><b>姓名</b></label><b style="color: red;">*</b>
-              <input type="text" class="form-control" id="exampleFormControlInput0" placeholder="姓名" required>
-              <div id='exampleFormControlInput0Feedback' class="invalid-feedback">请输入您的姓名</div>
-            </div>
-            <div class="mb-3 col-lg-3">
-              <label for="exampleFormControlInput1" class="form-label"><b>联系电话</b></label><b style="color: red;">*</b>
-              <input type="tel" class="form-control" id='exampleFormControlInput1' pattern="1[0-9]{10}" placeholder="联系电话" required>
-              <div id='exampleFormControlInput1Feedback' class="invalid-feedback">请输入您的联系电话</div>
-            </div>
-            <div class="mb-3 col-lg-3">
-              <label for="exampleFormControlInput2" class="form-label"><b>所在单位</b></label><b style="color: red;">*</b>
-              <input type="text"  class="form-control" id="exampleFormControlInput2" placeholder="所在单位" required>
-              <div id="exampleFormControlInput2Feedback" class="invalid-feedback">请输入您的所在单位</div>
-            </div>
-            <div class="mb-3 col-lg-3">
-              <label for="exampleFormControlInput3" class="form-label"><b>电子邮箱</b></label>
-              <input type="email"  class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"><b>需求描述</b></label><b style="color: red;">*</b>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="简要描述需求描述" required></textarea>
-            <div id='exampleFormControlTextarea1Feedback' class="invalid-feedback">请输入您的需求描述</div>
-          </div>  
-        <input class="btn btn-primary" type="submit" value="提交">
-        </form>
-      </div>
-      <hr class="featurette-divider">
+      for (let i = 0; i < sections.length; i++) {
+        const currLink = sections[i];
+        const val = currLink.getAttribute("href");
+        const refElement = document.querySelector(val);
+        const scrollTopMinus = scrollPos + 73;
+        if (
+          refElement.offsetTop <= scrollTopMinus &&
+          refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+        ) {
+          document
+            .querySelector(".ud-menu-scroll")
+            .classList.remove("active");
+          currLink.classList.add("active");
+        } else {
+          currLink.classList.remove("active");
+        }
+      }
+    }
 
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-end"><a href="#">回到顶部</a></p>
-        <p>&copy; 2008-2023 深圳龙泽宏天会计师事务所(普通合伙)  </p>
-        <p>深圳市福田区莲花街道景华社区红荔西路7002号第一世界广场A座9E</p>
-        <p>1025598017@qq.com &nbsp;&nbsp;&nbsp;&nbsp; (+86)0755-33050262</p>
-        <p><a target="_blank" href="https://www.szicpa.org/">深圳注册会计师协会</a> &middot;&nbsp;&nbsp;&nbsp;&nbsp; <a target="_blank" href="https://www.cicpa.org.cn/">中国注册会计师协会</a></p>
-      </footer>
-    </main>
-  
+    window.document.addEventListener("scroll", onScroll);
+  </script>
+</body>
 
-  </body>
 </html>
-
