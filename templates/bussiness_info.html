@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play | Open source Project by UIdeck</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="../static/images/favicon.svg" type="image/svg" />
+
+    <!-- ===== All CSS files ===== -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min2.css" />
+    <link rel="stylesheet" href="../static/css/animate.css" />
+    <link rel="stylesheet" href="../static/css/lineicons.css" />
+    <link rel="stylesheet" href="../static/css/ud-styles.css" />
+    <!-- <link rel="stylesheet" href="../static/css/carousel.css" /> -->
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- ====== Header Start ====== -->
+    <header class="ud-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="../static/images/logo/logo.svg" alt="Logo" />
+                        </a>
+                        <button class="navbar-toggler">
+                            <span class="toggler-icon"> </span>
+                            <span class="toggler-icon"> </span>
+                            <span class="toggler-icon"> </span>
+                        </button>
+
+                        <div class="navbar-collapse">
+                            <ul id="nav" class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="ud-menu-scroll" href="/#home">首页</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="ud-menu-scroll" href="/#bussiness">业务范围</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="ud-menu-scroll" href="/#news">新闻资讯</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="ud-menu-scroll" href="/#about">关于我们</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="ud-menu-scroll" href="/#talent">人才招聘</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="ud-menu-scroll" href="/#contact">联系我们</a>
+                                </li>
+                                <!-- <li class="nav-item nav-item-has-children">
+                    <a href="javascript:void(0)"> Pages </a>
+                    <ul class="ud-submenu">
+                      <li class="ud-submenu-item">
+                        <a href="about.html" class="ud-submenu-link">
+                          About Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="pricing.html" class="ud-submenu-link">
+                          Pricing Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="contact.html" class="ud-submenu-link">
+                          Contact Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="blog.html" class="ud-submenu-link">
+                          Blog Grid Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="/news/news_detail" class="ud-submenu-link">
+                          Blog Details Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="login.html" class="ud-submenu-link">
+                          Sign In Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="404.html" class="ud-submenu-link">404 Page</a>
+                      </li>
+                    </ul>
+                  </li> -->
+                            </ul>
+                        </div>
+
+                        <div class="navbar-btn d-none d-sm-inline-block">
+                            <a href="login.html" class="ud-main-btn ud-login-btn">
+                                登陆
+                            </a>
+                            <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
+                                注册
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ====== Header End ====== -->
+
+    <!-- ====== Banner Start ====== -->
+    <section class="ud-page-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ud-banner-content">
+                        <h1>业务介绍</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== Banner End ====== -->
+
+    <!-- ====== Bussiness Info Start ====== -->
+    <div class="container marketing">
+
+        <div class="col-md-12">&nbsp;&nbsp;</div>
+        <!-- <hr class="featurette-divider"> -->
+
+        <div class="row featurette">
+            <div class="col-md-7 text-center my-auto">
+                <h2 class="featurette-heading fw-normal lh-1">
+                    First featurette heading.
+                    <span class="text-body-secondary ">
+                        It’ll blow your mind.
+                    </span>
+                </h2>
+                <p class="lead">
+                    Some great placeholder content for the first featurette here.
+                    Imagine some exciting prose here.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
+                        fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+                </svg>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2 text-center my-auto">
+                <h2 class="featurette-heading fw-normal lh-1">
+                    Oh yeah, it’s that good.
+                    <span class="text-body-secondary">See
+                        for yourself.
+                    </span>
+                </h2>
+                <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how
+                    this
+                    layout would work with some actual real-world content in place.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
+                        fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+                </svg>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 text-center my-auto">
+                <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
+                        class="text-body-secondary">Checkmate.</span></h2>
+                <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+                    intended to be actually read, simply here to give you a better view of what this would look like
+                    with
+                    some
+                    actual content. Your content.</p>
+            </div>
+            <div class="col-md-5">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
+                        fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+                </svg>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2 text-center my-auto">
+                <h2 class="featurette-heading fw-normal lh-1">
+                    Oh yeah, it’s that good.
+                    <span class="text-body-secondary">See
+                        for yourself.
+                    </span>
+                </h2>
+                <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how
+                    this
+                    layout would work with some actual real-world content in place.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
+                        fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+                </svg>
+            </div>
+        </div>
+        <!-- <hr class="featurette-divider"> -->
+    </div>
+    <div class="col-md-12">&nbsp;&nbsp;</div>
+    <!-- ====== Bussiness End ====== -->
+
+    <!-- ====== Footer Start ====== -->
+    <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
+        <div class="shape shape-1">
+            <img src="../static/images/footer/shape-1.svg" alt="shape" />
+        </div>
+        <div class="shape shape-2">
+            <img src="../static/images/footer/shape-2.svg" alt="shape" />
+        </div>
+        <div class="shape shape-3">
+            <img src="../static/images/footer/shape-3.svg" alt="shape" />
+        </div>
+        <div class="ud-footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="ud-widget">
+                            <a href="index.html" class="ud-footer-logo">
+                                <img src="../static/images/logo/logo.svg" alt="logo" />
+                            </a>
+                            <p class="ud-widget-desc">
+                                我们用心为您服务.
+                            </p>
+                            <ul class="ud-widget-socials">
+                                <li>
+                                    <a href="https://twitter.com/MusharofChy">
+                                        <i class="lni lni-facebook-filled"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/MusharofChy">
+                                        <i class="lni lni-twitter-filled"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/MusharofChy">
+                                        <i class="lni lni-instagram-filled"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/MusharofChy">
+                                        <i class="lni lni-linkedin-original"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                        <div class="ud-widget">
+                            <h5 class="ud-widget-title">业务介绍</h5>
+                            <ul class="ud-widget-links">
+                                <li>
+                                    <a href="javascript:void(0)">财务审计</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">专项审计</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">财税规划</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">企业管理</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+                        <div class="ud-widget">
+                            <h5 class="ud-widget-title">新闻资讯</h5>
+                            <ul class="ud-widget-links">
+                                <li>
+                                    <a href="javascript:void(0)">我司新闻</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">行业新闻</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">学习资料</a>
+                                </li>
+                                <!-- <li>
+                  <a href="javascript:void(0)">Refund policy</a>
+                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+                        <div class="ud-widget">
+                            <h5 class="ud-widget-title">关于我们</h5>
+                            <ul class="ud-widget-links">
+                                <li>
+                                    <a href="https://lineicons.com/" rel="nofollow noopner" target="_blank">我们是谁
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://ecommercehtml.com/" rel="nofollow noopner" target="_blank">人才招聘</a>
+                                </li>
+                                <li>
+                                    <a href="https://graygrids.com/" rel="nofollow noopner" target="_blank">联系我们</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-3 col-lg-6 col-md-8 col-sm-10">
+            <div class="ud-widget">
+              <h5 class="ud-widget-title">Partners</h5>
+              <ul class="ud-widget-brands">
+                <li>
+                  <a href="https://ayroui.com/" rel="nofollow noopner" target="_blank">
+                    <img src="../static/images/footer/brands/ayroui.svg" alt="ayroui" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://ecommercehtml.com/" rel="nofollow noopner" target="_blank">
+                    <img src="../static/images/footer/brands/ecommerce-html.svg" alt="ecommerce-html" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://graygrids.com/" rel="nofollow noopner" target="_blank">
+                    <img src="../static/images/footer/brands/graygrids.svg" alt="graygrids" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://lineicons.com/" rel="nofollow noopner" target="_blank">
+                    <img src="../static/images/footer/brands/lineicons.svg" alt="lineicons" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://uideck.com/" rel="nofollow noopner" target="_blank">
+                    <img src="../static/images/footer/brands/uideck.svg" alt="uideck" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://tailwindtemplates.co/" rel="nofollow noopner" target="_blank">
+                    <img src="../static/images/footer/brands/tailwindtemplates.svg" alt="tailwindtemplates" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- <div class="ud-footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <ul class="ud-footer-bottom-left">
+              <li>
+                <a href="javascript:void(0)">Privacy policy</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Support policy</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Terms of service</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p class="ud-footer-bottom-right">
+              Designed and Developed by
+              <a href="https://uideck.com" rel="nofollow">UIdeck</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    </footer>
+    <!-- ====== Footer End ====== -->
+
+    <!-- ====== Back To Top Start ====== -->
+    <a href="javascript:void(0)" class="back-to-top">
+        <i class="lni lni-chevron-up"> </i>
+    </a>
+    <!-- ====== Back To Top End ====== -->
+
+    <!-- ====== All Javascript Files ====== -->
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/wow.min.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/color-modes.js"></script>
+</body>
+
+</html>
